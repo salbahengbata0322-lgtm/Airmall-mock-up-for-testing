@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%23FFD400%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%230A0A0A%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M12%2026c8-6%2014%206%2022%200s10-4%2018-2%22/%3E%3Cpath%20d%3D%22M12%2042c8-6%2014%206%2022%200s10-4%2018-2%22/%3E%3C/g%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Air-Mall Industrial Philippines Inc.">
+<meta property="og:description" content="Energy-efficient electro-mechanical, refrigeration and air-conditioning design, installation and maintenance in Quezon City, Philippines.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MOCK-UP | Air-Mall Industrial Philippines Inc. | Energy-efficient electro-mechanical design, installation and maintenance</title>
 <meta name="description" content="Air-Mall Industrial Philippines Inc. designs, installs and maintains energy-efficient electro-mechanical, refrigeration and air-conditioning systems for building owners and end-users in Quezon City and beyond.">
@@ -100,6 +103,29 @@
   .mini h3{font-size:1.1rem}
   .mini p{font-size:.92rem;color:var(--ink-soft);margin-top:.2rem}
 
+  /* FAQ */
+  .faq{background:var(--white)}
+  .faq-list{margin-top:2.2rem;border-top:2px solid var(--ink);max-width:820px}
+  .faq details{border-bottom:1px solid var(--mist);padding:1.1rem 0}
+  .faq summary{cursor:pointer;font-family:var(--display);font-weight:600;font-size:1.2rem;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--ink);background:var(--coil);width:1.9rem;height:1.9rem;border-radius:50%;display:grid;place-items:center;flex:none}
+  .faq details[open] summary::after{content:"\2212"}
+  .faq details p{margin-top:.7rem;color:var(--ink-soft)}
+  /* CTA band */
+  .cta-band{background:var(--ink);color:var(--white);padding:clamp(3rem,6vw,4.5rem) 0;border-top:3px solid var(--coil)}
+  .cta-band .wrap{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
+  .cta-band h2{max-width:22ch;font-size:clamp(1.7rem,3.5vw,2.4rem)}
+  .cta-band p{color:#D9D9D9;margin-top:.7rem}
+  .cta-band .actions{display:flex;gap:.9rem;flex-wrap:wrap}
+  /* Map and consent */
+  .map{margin-top:2rem;border-radius:var(--radius);overflow:hidden;border:3px solid var(--ink);background:var(--white)}
+  .map iframe{width:100%;height:280px;border:0;display:block}
+  .map a{display:block;padding:.8rem 1rem;font-weight:600;background:var(--ink);color:var(--coil);text-decoration:none}
+  .consent{display:flex;gap:.7rem;align-items:flex-start;font-weight:400;font-size:.95rem}
+  .consent input{width:1.2rem;height:1.2rem;margin-top:.2rem;accent-color:#0A0A0A;flex:none}
+  .callbar{display:none}
+
   /* About */
   .about{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
   .about p+p{margin-top:1rem}
@@ -128,6 +154,10 @@
   footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 
   @media (max-width:860px){
+    body{padding-bottom:68px}
+    .callbar{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#0A0A0A;padding:.6rem .8rem;border-top:3px solid var(--coil)}
+    .callbar .btn{text-align:center;padding:.7rem .5rem}
+
     .projects-grid,.more-projects{grid-template-columns:1fr}
     .services-head,.service,.about,.contact-grid{grid-template-columns:1fr}
     .steps{grid-template-columns:1fr 1fr}
@@ -156,6 +186,7 @@
         <li><a href="#process">How we work</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a class="btn btn-primary" href="#contact">Request a quote</a></li>
       </ul>
     </nav>
@@ -280,6 +311,43 @@
     </div>
   </section>
 
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <h2>Common questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>What services do you offer?</summary>
+          <p>We design, supply, install and maintain energy-efficient electro-mechanical, refrigeration and air-conditioning systems for building owners and end-users.</p>
+        </details>
+        <details>
+          <summary>How do I ask for a quotation or site visit?</summary>
+          <p>Use the form in the Contact section, call us, or send an email. Tell us about your building and what you need, and our team will contact you.</p>
+        </details>
+        <details>
+          <summary>Where is your office and when is it open?</summary>
+          <p>We are at 2nd/F Unit 2-D Enriqueta Bldg., 422 N.S Amoranto Ave., cor. D. Tuazon St., Quezon City. Office hours are 8:00 AM to 5:00 PM.</p>
+        </details>
+        <details>
+          <summary>How can I reach you quickly?</summary>
+          <p>Call or text our mobile number, 0923-7422274, or use the landline numbers in the Contact section.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" aria-labelledby="ctaTitle">
+    <div class="wrap">
+      <div>
+        <h2 id="ctaTitle">Need a quotation or a site visit?</h2>
+        <p>Tell us about your building and we will get back to you using the details you give us.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+639237422274">Call 0923-7422274</a>
+        <a class="btn btn-ghost" href="#contact">Send a request</a>
+      </div>
+    </div>
+  </section>
+
   <section class="contact" id="contact">
     <div class="wrap contact-grid">
       <div class="details">
@@ -291,7 +359,12 @@
           <div><dt>Email</dt><dd><a href="mailto:airmall05@yahoo.com.ph">airmall05@yahoo.com.ph</a></dd></div>
           <div><dt>Office hours</dt><dd>8:00 AM to 5:00 PM</dd></div>
           <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/AirmallIndustrialPH/" target="_blank" rel="noopener noreferrer">Air-mall Industrial Philippines Inc.</a></dd></div>
+          <div><dt>Careers</dt><dd>Interested in working with us? Email your details to <a href="mailto:airmall05@yahoo.com.ph?subject=Job%20inquiry">airmall05@yahoo.com.ph</a></dd></div>
         </dl>
+        <div class="map">
+          <iframe title="Map showing the Air-Mall Industrial Philippines office in Quezon City" src="https://www.google.com/maps?q=Enriqueta+Bldg+422+N.S.+Amoranto+Ave+Quezon+City+Philippines&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Enriqueta+Bldg+422+N.S.+Amoranto+Ave+Quezon+City+Philippines" target="_blank" rel="noopener noreferrer">Get directions</a>
+        </div>
       </div>
       <form id="quoteForm" novalidate>
         <label>Your name<input name="name" required autocomplete="name"></label>
@@ -306,6 +379,8 @@
           </select>
         </label>
         <label>Project details<textarea name="details" required></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>I agree that Air-Mall Industrial Philippines, Inc. may use the details I enter here to reply to my request.</span></label>
+        <p class="form-note">We use your name, email and message only to respond to your request. Privacy notice: <span class="placeholder">[Link or text to be confirmed by Privacy/Legal]</span></p>
         <button class="btn btn-primary" type="submit">Send request</button>
         <p class="form-note">This form opens your email app with your request addressed to Air-Mall. Nothing is stored on this page.</p>
         <p id="formStatus" role="status" aria-live="polite"></p>
@@ -320,6 +395,8 @@
     <span><a href="https://www.facebook.com/AirmallIndustrialPH/" target="_blank" rel="noopener noreferrer">Facebook</a> &nbsp;|&nbsp; Quezon City, Philippines</span>
   </div>
 </footer>
+
+<div class="callbar"><a class="btn btn-ghost" href="tel:+639237422274">Call us</a><a class="btn btn-primary" href="#contact">Request a quote</a></div>
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
@@ -340,8 +417,8 @@
   form.addEventListener('submit', e => {
     e.preventDefault();
     const d = new FormData(form);
-    if (!d.get('name') || !d.get('email') || !d.get('details')) {
-      status.textContent = 'Please fill in your name, email and project details.';
+    if (!d.get('name') || !d.get('email') || !d.get('details') || !d.get('consent')) {
+      status.textContent = 'Please fill in your name, email and project details, and tick the consent box.';
       return;
     }
     const subject = encodeURIComponent('Quote request: ' + d.get('service'));
